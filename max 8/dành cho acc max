@@ -1,1 +1,222 @@
+getgenv().ConfigsKaitun = {
+["Block Pet Gift"] = true, 
+["Low Cpu"] = true,
 
+ ["Rejoin When Update"] = true,
+
+ ["Limit Tree"] = {
+  ["Limit"] = 200,
+  ["Destroy Untill"] = 200,
+
+  ["Safe Tree"] = {
+   "Bone Blossom",
+   "Fossilight",
+   "Cacao",
+   "Sugar Apple",
+   "Ember Lily",
+   "Beanstalk",
+   "Giant Pinecone",
+   "Pepper",
+   "Burning Bud",
+   "Grape",
+   "Maple Apple",
+   "Sunflower",
+   "Elephant Ears",
+   "Dragon Pepper",
+   "Mango",
+   "Coconut",
+  }
+ },
+
+
+ Seed = {
+  Buy = {
+   Mode = "Auto", -- Custom , Auto
+   Custom = {
+    "Carrot",
+    "Bamboo",
+    "Pumpkin",
+    "Daffodil",
+    "Orange Tulip",
+    "Watermelon",
+    "Mushroom",
+    "Nightshade",
+    "Beanstalk",
+   }
+  },
+  Place = {
+   Mode = "Select", -- Select , Lock
+   Select = {
+    "Cacao",
+    "Sugar Apple",
+    "Ember Lily",
+    "Beanstalk",
+    "Giant Pinecone",
+    "Pepper",
+    "Burning Bud",
+    "Mushroom",
+    "Bone Blossom",
+       "Maple Apple",
+       "Grape",
+    "Mango",
+       "Coconut",
+   },
+   Lock = {
+   }
+  }
+ },
+
+ ["Seed Pack"] = {
+  Locked = {
+
+  }
+ },
+
+ Events = {
+  ["Traveling Shop"] = {
+   "Bald Eagle",
+   "Night Staff",
+   "Star Caller",
+   "Bee Egg",
+  },
+  Craft = {
+   "Lightning Rod",
+   "Anti Bee Egg",
+  },
+  Shop = {
+   "Zen Egg",
+  },
+  Restocks_limit = 32000000,
+  MinimumChi = 10
+ },
+
+ Gear = {
+  Buy = { 
+   "Master Sprinkler",
+   "Godly Sprinkler",
+   "Advanced Sprinkler",
+   "Basic Sprinkler",
+   "Lightning Rod",
+   "Level Up Lollipop",
+   "Medium Treat",
+   "Medium Toy",
+  },
+  Lock = {
+   "Godly Sprinkler",
+            "Master Sprinkler",
+            "Level Up Lollipop"
+  },
+ },
+
+ Eggs = {
+  Place = {
+      "Common Summer Egg",      
+      "Zen Egg",
+  },
+  Buy = {
+   "Anti Bee Egg",
+   "Paradise Egg",
+   "Bee Egg",
+   "Night Egg",
+   "Bug Egg",
+   "Common Summer Egg",
+  }
+ },
+
+ Pets = {
+  ["Start Delete Pet At"] = 40,
+  ["Upgrade Slot"] = {
+   ["Pet"] = {
+    ["Starfish"] = { 8, 76 },
+   },
+   ["Limit Upgrade"] = 5,
+   ["Equip When Done"] = {
+    ["Tanchozuru"] = { 8, 100 },
+   },
+  },
+  Locked_Pet_Age = 60, -- pet that age > 60 will lock
+  Locked = {
+   "T-Rex",
+   "Dragonfly",
+   "Spinosaurus",
+   "Raccoon",
+   "Fennec Fox",
+   "Corrupted Kitsune",
+   "Disco Bee",
+   "Butterfly",
+   "Mimic Octopus",
+   "Kitsune",
+   ["Starfish"] = 20,
+   ["Tanchozuru"] = 8,
+  },
+  LockPet_Weight = 6, -- if Weight >= 10 they will locked,
+  Instant_Sell = {
+   "Dog",
+   "Bunny",
+   "Golden Lab",
+   "Triceratops",
+   "Stegosaurus",
+   "Raptor",
+   "Seagull",
+   "Parasaurolophus",
+   "Pachycephalosaurus",
+   "Iguanodon",
+   "Shiba Inu",
+   "Nihonzaru",
+   "Tanuki",
+   "Kappa",
+   "Caterpillar",
+   "Snail",
+   "Giant Ant",
+   "Praying Mantis",
+   "Ankylosaurus",
+   "Ostrich",
+   "Peacock",
+   "Scarlet Macaw",
+   "Capybara",
+   "Wasp",
+   "Tarantula Hawk",
+   "Moth",
+   "Bee",
+   "Honey Bee",
+   "Bear Bee",
+   "Petal Bee",
+   "Grey Mouse",
+   "Brown Mouse",
+   "Squirrel",
+   "Red Giant Ant",
+            "Hedgehog",
+            "Mole",
+            "Frog",
+            "Echo Frog",
+            "Night Owl",
+   "Brontosaurus",
+   "Dilophosaurus",
+   "Pterodactyl",
+   "Crab",
+  }
+ },
+
+ Webhook = {
+  UrlPet = "https://discord.com/api/webhooks/1336202035158188032/1c1xSEScw7UyxdBYKGEK7qM07samEavpfovhiJt_q0fu-8axrxpDjdTSfgEMvqPWvyn6",
+  UrlSeed = "",
+  PcName = "pc1",
+
+  Noti = {
+   Seeds = {
+    "Sunflower",
+    "Dragon Pepper",
+    "Elephant Ears",
+   },
+   SeedPack = {
+    "Idk",
+   },
+   Pets = {
+           "Kitsune",
+   },
+   Pet_Weight_Noti = true,
+  }
+ },
+}
+License = "fHj9y5ag4emnZAeqUd5uqyPVpgOY2NPm"
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
